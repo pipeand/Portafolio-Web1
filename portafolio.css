@@ -117,7 +117,7 @@ h1 {
 .encabezadoportafolio h2 
 .header_contacto h2 {
     font-size: 2.5em;
-    color #dbd7d7
+    color: #dbd7d7;
 }
 
 .portafolio .container {
@@ -139,5 +139,8 @@ h1 {
 .tarjeta img {
     width: 100%;
     height: 150px;
+}
 
+.titulo_tarjeta {
+    padding: 20px;
 }

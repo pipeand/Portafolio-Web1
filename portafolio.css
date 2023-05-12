@@ -4,13 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 body {
-
+    font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
     background: #0B2469;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .contenido{
@@ -23,8 +27,7 @@ body {
 .menu {
     display: flex;
     width: 50%;
-    justify-content: space-between;
-    padding: 2em;
+    justify-content: space-around;
 }
 
 .logo{
@@ -39,8 +42,20 @@ body {
 .menu li {
     list-style: none;
 }
+
 .menu a {
-    color: rgb(107, 71, 173);
+    color: rgb(207, 194, 231);
+    text-decoration: none;
+    padding: 10px 20px; 
+}
+
+.menu li:hover a {
+    background-color: rgb(204, 168, 69);
+    color: #191c32;
+}
+
+.menu li a:hover {
+    color: #dbd7d7;
 }
 
 .main {
@@ -51,6 +66,7 @@ body {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2em; 
+    color: antiquewhite;
 }
 
 h1 {
@@ -66,6 +82,7 @@ h1 {
 }
 
 .acercademi {
+    background-color: #2c3c69;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     width: 100vw;
@@ -79,6 +96,7 @@ h1 {
 }
 
 .descripcionpropia {
+    background-color: #2c3c69;
     grid-column: 5/10;
     padding: 3em;
 }
@@ -131,16 +149,257 @@ h1 {
 
 .tarjeta {
     width: 300px;
+    height: 500px;
     background-color: #2c3c69;
     background-image: url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543491/samples/2-original_agisst.png);
-    
+    margin: 1em;
 }
 
 .tarjeta img {
     width: 100%;
-    height: 150px;
+    height: 200px;
+    background-size: cover;
 }
 
 .titulo_tarjeta {
     padding: 20px;
+}
+
+.links_tarjeta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links_tarjeta a {
+    color: #dbd7d7;
+}
+
+.links_tarjeta i {
+    font-size: 1.5em;
+}
+
+.button-info_proyecto {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.detalle_proyecto {
+    text-decoration: none;
+    color: #3f5ba8;
+}
+
+.contacto {
+    padding: 3em;
+}
+
+.container_contacto {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+.container_contacto img{
+    width: 750px;
+    height: 700px;
+    bottom: 0px;
+}
+
+.form-group textarea {
+    height: 150px;
+    padding: 1.5em;
+    background: none;
+    border: 1px rgb(248, 196, 136) ;
+    color: rgb(248, 196, 136);
+}
+
+.form-group .input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px rgb(248, 196, 136);
+    color: rgb(248, 196, 136);
+}
+
+.form-group .enviar {
+    padding: 10px 20px;
+    margin: 1em;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgb(197, 190, 89);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    padding: 2em;
+    background-color: rgb(59, 81, 143);
+}
+
+.contenido_footer h2 {
+    font-size: 3em;
+}
+
+.contenido_footer h5 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.redes_sociales {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.redes_sociales i {
+    font-size: 1.5em;
+}
+
+.portafolio,
+.contacto {
+    width: 100vw;
+    background-color: #0B2469;
+    color: #dbd7d7;
+}
+
+.encabezadoportafolio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em;
+}
+
+.encabezadoportafolio h2,
+.contacto h2 {
+    font-size: 2.5em;
+    color: #dbd7d7;
+}
+
+.portafolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta {
+    width: 300px;
+    background-color: #0B2469;
+    margin: 1em;
+}
+
+.titulo_tarjeta {
+    padding: 20px;
+}
+
+.links_tarjeta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links_tarjeta a {
+    color: #dbd7d7;
+    text-decoration: none;
+}
+
+.links_tarjeta i {
+    font-size: 1.5em;
+}
+
+.info_proyecto {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    padding: 10px 20px;
+    background-color: rgb(223, 187, 27);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+
+.detalle_proyecto a {
+    display: flex;
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+.contacto {
+    padding: 3em;
+}
+
+.container_contacto {
+    margin: 0 auto;
+    margin-top: 10em;
+}
+
+.contacto img {
+    width: 750px;
+    height: 700px;
+    bottom: 0px;
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form-group textarea {
+    height: 150px;
+    padding: 1.5em;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.form-group .input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.info_proyecto a {
+    text-decoration: none;
+}
+
+.instagram {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.facebook {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp {
+    display: flex;
+    width: 45px;
+    height: 45px;
+}
+
+.links_tarjeta {
+    display: flex;
+    justify-content: space-evenly;
 }

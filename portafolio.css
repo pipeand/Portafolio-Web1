@@ -458,6 +458,92 @@ h1 {
         position: absolute;
         top: 0;
         left: 0;
+        height: 80vh;
+        background-color: #2b3058;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .show-menu {
+        transform: translateX(0%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu li {
+        margin: 2em;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+    
+    .fa-bars {
+        font-size: 1.5em;
+        margin-top: -0.2em;
+    }
+    
+    .toggle-menu .fa-close {
+        font-size: 1.7em;
+        display: none;
+    }
+    
+    .main,
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .main img {
+        width: min(40%, 100px);
+        height: auto;
+    }
+    
+    .about img {
+        width: min(40%, 100px);
+        height: auto;
+    }
+
+    .info-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-content .sotial-networks,
+    .info-content__subtitle {
+        display: block;
+    }
+    
+    .info-content__subtitle {
+        margin-bottom: 0.4em;
+    }
+    
+    .info-content .sotial-networks {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .download-cv,
+    .info-content__p,
+    .contact-section__img {
+        display: none;
+    }
+    
+    .form-group {
+        width: 80vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
         height: 100vh;
         background-color: #2b3058;
         z-index: 1;
@@ -534,11 +620,6 @@ h1 {
     .form-group {
         width: 80vw;
     }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

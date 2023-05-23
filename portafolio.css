@@ -17,26 +17,38 @@ html {
     scroll-behavior: smooth;
 }
 
-.contenido{
+.wrapper {
     width: 100vw;
     height: 100vh;
     background-color: #0B2469;
     color: antiquewhite;
 }
 
+.portafolio {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B2469;
+    color: antiquewhite;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand{
+    margin-top: -7px;
+}
+
+.brand span{
+    color: rgb(8, 218, 89);
+}
+
 .menu {
     display: flex;
     width: 50%;
     justify-content: space-around;
-}
-
-.logo{
-    margin-top: 7px;
-    margin-left: 7px;
-}
-
-.logo span{
-    color: rgb(8, 218, 89);
 }
 
 .menu li {
@@ -49,13 +61,23 @@ html {
     padding: 10px 20px; 
 }
 
+.menu a:hover {
+    background-color: #dbd7d7;
+    color: #0a0a0a;
+}
+
+.menu .active {
+    color: aqua;
+}
+
 .menu li:hover a {
-    background-color: rgb(204, 168, 69);
+    background-color: rgba(180, 161, 109, 0.212);
     color: #191c32;
 }
 
 .menu li a:hover {
-    color: #dbd7d7;
+    color: #f3a109;
+    transition: ease-in .4s;
 }
 
 .main {
@@ -70,6 +92,7 @@ html {
 }
 
 h1 {
+    color: #dbd7d7  ;
     font-size: 3em;
 }
 
@@ -81,7 +104,7 @@ h1 {
     border-radius: 15%;
 }
 
-.acercademi {
+.about {
     background-color: #2c3c69;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -89,21 +112,25 @@ h1 {
     align-items: center;
 }
 
-.acercademi img {
+.about img {
     width: 100%;
     grid-column: 1/5;
     border-radius: 15%;
 }
 
-.descripcionpropia {
+.about-info {
     background-color: #2c3c69;
     grid-column: 5/10;
     padding: 3em;
 }
 
-.descripcionpropia h2 {
+.about-info h2 {
     font-size: 2em;
     color: bisque;
+}
+
+.about-info p {
+    color: antiquewhite;
 }
 
 .division {
@@ -114,26 +141,37 @@ h1 {
     margin-bottom: 2em;
 }
 
-.acercademi p {
+.ver-cv {
+    padding: 10px 20px;
+    background-color: rgb(190, 106, 10);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+
+.about-info p {
     margin-top: 1em;
 }
 
-.portafolio,
-.contacto {
+.portafolio {
     width: 100vw;
     background-color: #191c32;
     color: #dbd7d7;
 }
 
-.encabezadoportafolio {
+.portafolio-headings {
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1em;
 }
 
-.encabezadoportafolio h2 
-.header_contacto h2 {
+.portafolio-headings h2  {
     font-size: 2.5em;
     color: #dbd7d7;
 }
@@ -147,44 +185,63 @@ h1 {
     justify-content: center;
 }
 
-.tarjeta {
+.card {
     width: 300px;
-    height: 500px;
+    height: 350px;
     background-color: #2c3c69;
-    background-image: url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543491/samples/2-original_agisst.png);
+    background-size: cover;
     margin: 1em;
 }
 
-.tarjeta img {
+.card__img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     background-size: cover;
+    background-image: url(img/fonod\ tarjeta.png);
 }
 
-.titulo_tarjeta {
+.card__title {
     padding: 20px;
 }
 
-.links_tarjeta {
+.card__proyect-links {
     display: flex;
     justify-content: space-evenly;
 }
 
-.links_tarjeta a {
+.card__proyect-links a {
     color: #dbd7d7;
+    text-decoration: none;
 }
 
-.links_tarjeta i {
+.card__proyect-links i {
     font-size: 1.5em;
 }
 
-.button-info_proyecto {
+.card .info_proyecto {
     display: flex;
     justify-content: center;
     margin: 1em;
 }
 
-.detalle_proyecto {
+.card .info_proyecto a{
+    text-decoration: none;
+    color: #dbd7d7;
+}
+
+.button-content {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.info_proyecto {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.info_proyecto{
     text-decoration: none;
     color: #3f5ba8;
 }
@@ -200,8 +257,8 @@ h1 {
 }
 
 .container_contacto img{
-    width: 750px;
-    height: 700px;
+    width: 50px;
+    height: 50px;
     bottom: 0px;
 }
 
@@ -402,4 +459,30 @@ h1 {
 .links_tarjeta {
     display: flex;
     justify-content: space-evenly;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

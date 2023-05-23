@@ -6,25 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portafolio</title>
         <link rel="stylesheet" href="portafolio.css"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     </head>
     <body>
-        <div class="contenido">
+        <div class="wrapper">
             <header>
-                <nav class="encabezado">
-                    <div class="logo">
+                <nav class="navbar">
+                    <div class="brand">
                         <h2>A<span>F</span>A</h2>
                     </div>
-                    <ul class="menu">
-                        <li><a href="#informacion">Inicio</a></li>
-                        <li><a href="#acercademi">¿Quien soy?</a></li>
-                        <li><a href="#portafolio">Portafolio</a></li>  
-                        <li><a href="#contacto">Contacto</a></li>
+                    <ul class="menu" id="menu">
+                        <li><a href="#"  class="active">Inicio</a></li>
+                        <li><a href="#">Quien Soy</a></li>
+                        <li><a href="#">Portafolio</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
+                    <div class="toggle-menu">
+                        <i class="fas fa-bars" id="toggle_open"></i>
+                        <i class="fas fa-close" id="toggle_close"></i>
+                    </div>
                 </nav>
+                
             </header>
 
             <main class="main">
-                <div class="informacion">
+                <div class="info-content">
                     <h1>¡HOLA! Soy Andrés Arenales</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, omnis. Qui pariatur illo veritatis commodi vel provident. Odit nesciunt quod, porro commodi, consequuntur odio expedita consequatur hic adipisci quam illum.</p>
                 </div>
@@ -34,91 +40,49 @@
 
         
 
-        <div class="acercademi">
+        <div class="about">
             <img src="img/foto editada.jpg" alt="">
-            <div class="descripcionpropia">
+            <div class="about-info">
                 <h2>Acerca de mi</h2>
                 <div class="division"></div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem odio, sint aut hic sunt molestias obcaecati culpa reiciendis laborum qui vero vel aperiam impedit, numquam magni ducimus laboriosam corporis libero.</p>
+                <p>Soy un aspirante a desarrollador Web</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate quod voluptatem, mollitia dicta itaque autem qui iste eveniet tenetur sunt laudantium voluptas, officiis eligendi at eos? Eum, natus earum.</p>
                 <button class="ver-cv">Leer más →</button>
             </div>
         </div>
 
-            <div class="portafolio">
-                <div class="encabezadoportafolio">
-                    <h2> Mi Portafolio</h2>
-                    <div class="division"></div>
-                </div>
-
-        <div class="container">
-            <div class="tarjeta">
-                <div class="tarjeta_img"></div>
-                <div class="titulo_tarjeta">
-                    <h2>Descripción de Proyecto</h2>
-                </div>
-                <div class="links_tarjeta">
-                <a href="#">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-globe"></i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-code"></i>
-                </a>
-                </div>
-                <div class="detalle_proyecto">
-                <button class="info_proyecto">
-                    <a href="#">Detalles proyecto</a>
-                </button>
-                </div>
+        <div class="portafolio">
+            <div class="portafolio-headings">
+                <h2> Mi Portafolio</h2>
+                <div class="division"></div>
             </div>
-            <div class="tarjeta">
-                <div class="tarjeta_img"></div>
-                <div class="titulo_tarjeta">
-                    <h2>Descripción de Proyecto</h2>
+            <div class="container">
+                <div class="card">
+                    <div class="card__img">
+                    </div>
+                    <div class="card__title">
+                        <h2>Calendario de gatitos</h2>
+                    </div>
+                    <div class="card__proyect-links">
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="button-content">
+                        <button class="info_proyecto">
+                            <a href="#">Detalles proyecto</a>
+                        </button>
+                    </div>
+                    
                 </div>
-                <div class="links_tarjeta">
-                <a href="#">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-globe"></i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-code"></i>
-                </a>
-                </div>
-                <div class="detalle_proyecto">
-                <button class="info_proyecto">
-                    <a href="#">Detalles proyecto</a>
-                </button>
-                </div>
+                
             </div>
-            <div class="tarjeta">
-                <div class="tarjeta_img"></div>
-                <div class="titulo_tarjeta">
-                    <h2>Descripción de Proyecto</h2>
-                </div>
-                <div class="links_tarjeta">
-                <a href="#">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-globe"></i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-code"></i>
-                </a>
-                </div>
-                <div class="detalle_proyecto">
-                <button class="info_proyecto">
-                    <a href="#">Detalles proyecto</a>
-                </button>
-                </div>
-            </div>
-            
         </div>
 
         <div class="contacto">

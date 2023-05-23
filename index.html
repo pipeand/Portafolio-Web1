@@ -16,10 +16,18 @@
                         <h2>A<span>F</span>A</h2>
                     </div>
                     <ul class="menu" id="menu">
-                        <li><a href="#"  class="active">Inicio</a></li>
-                        <li><a href="#">Quien Soy</a></li>
-                        <li><a href="#">Portafolio</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                            <a href="#"  class="active">Inicio</a></li>
+                        <li>
+                            <i class="fa-solid fa-person"></i>
+                            <a href="#">Quien Soy</a></li>
+                        <li>
+                            <i class="fa-solid fa-folder"></i>
+                            <a href="#">Portafolio</a></li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#">Contacto</a></li>
                     </ul>
                     <div class="toggle-menu">
                         <i class="fas fa-bars" id="toggle_open"></i>
@@ -32,7 +40,7 @@
             <main class="main">
                 <div class="info-content">
                     <h1>¡HOLA! Soy Andrés Arenales</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, omnis. Qui pariatur illo veritatis commodi vel provident. Odit nesciunt quod, porro commodi, consequuntur odio expedita consequatur hic adipisci quam illum.</p>
+                    <p class="info-content_p">Soy un aspirante a desarrollador Web, con manejo intermedio en HTML, CSS, JAVA</p>
                 </div>
                 <img src="img/Polish_20210303_125701041.jpg" alt="">
             </main>
@@ -45,8 +53,8 @@
             <div class="about-info">
                 <h2>Acerca de mi</h2>
                 <div class="division"></div>
-                <p>Soy un aspirante a desarrollador Web</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate quod voluptatem, mollitia dicta itaque autem qui iste eveniet tenetur sunt laudantium voluptas, officiis eligendi at eos? Eum, natus earum.</p>
+                <p>Mi nombre es Andrés Felipe Arenales, un aficionado a la programación y al software, me forme en un colegio técnico e incluso alcance una formación complementaria como docente y actualmente me encuentro realizando una tecnología en análisis y desarrollo de software.</p>
+                <p>En el transcurso de mi formación me he capacitado en diferentes lenguajes de programación entre los que destacan SQL, JAVA, HTML y CSS. Además de ir desarrollando una lógica de programación más consistente e incluso mejorar mi manejo del idioma ingles.</p>
                 <button class="ver-cv">Leer más →</button>
             </div>
         </div>
@@ -64,7 +72,7 @@
                         <h2>Calendario de gatitos</h2>
                     </div>
                     <div class="card__proyect-links">
-                        <a href="#">
+                        <a href="https://github.com/pipeand/Calendario-gatitos">
                             <i class="fa-brands fa-github"></i>
                         </a>
                         <a href="">
@@ -85,22 +93,22 @@
             </div>
         </div>
 
-        <div class="contacto">
+        <div class="contact-section">
             <div class="header_contacto">
                 <h2>Contactame</h2>
             <div class="division"></div>
             </div>
-            <div class="container_contacto">
+            <div class="container_contact">
                 <img src="img/foto sin fondo.png" alt="">
                 <div class="forma_contacto">
                     <h4> Escribeme... </h4>
                     <form class="form-group">
                         <input type="text" 
                         placeholder="Nombre"
-                        class="ingreso_datos">
+                        class="input">
                         <input type="email"
                         placeholder="Email"
-                        class="ingreso_datos">
+                        class="input">
                         <textarea name="mensaje"
                         placeholder="Escribe tu mensaje aquí..."></textarea>
                         <button type="submit" class="enviar">Enviar Mensaje</button>
@@ -115,17 +123,12 @@
                     <h5>Aspirante a desarrollador Web</h5>
                 </div>
                 <div class="redes_sociales">
-                    <i class="instagram">
-                        <img src="img/instagram sin fondo.png" alt="">
-                    </i>
-                    <i class="facebook">
-                        <img src="img/descarga__1_-removebg-preview.png" alt="">
-                    </i>
-                    <i class="whatsapp">
-                        <img src="img/logo whatsapp.png" alt="">
-                    </i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
                 </div>
             </footer>
         </div>
+        <script src="scripts.js"></script>
     </body>
 </html> 

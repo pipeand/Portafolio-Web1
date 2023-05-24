@@ -255,7 +255,6 @@ html {
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -419,142 +418,6 @@ html {
     justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 800px) {
-    .menu {
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        background-color: #2b3058;
-        z-index: 1;
-        transform: translateX(-110%);
-        transition: all 0.5s ease-in-out;
-    }
-
-    .show-menu {
-        transform: translateX(0%);
-        transition: all 0.5s ease-in-out;
-    }
-
-    .menu li {
-        margin: 2em;
-    }
-
-    .toggle-menu {
-        display: block;
-    }
-    
-    .fa-bars {
-        font-size: 1.5em;
-        margin-top: -0.2em;
-    }
-    
-    .toggle-menu .fa-close {
-        font-size: 1.7em;
-        display: none;
-    }
-    
-    .main,
-    .sobremi {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
-    .main img {
-        width: min(40%, 100px);
-        height: auto;
-    }
-
-    .sobremi .col {
-        width: 100%;
-    }
-    
-    .sobremi img {
-        width: min(100%, 100px);
-        height: auto;
-    }
-
-    .info-content {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .info-content .sotial-networks,
-    .info-content__subtitle {
-        display: block;
-    }
-    
-    .info-content__subtitle {
-        margin-bottom: 0.4em;
-    }
-    
-    .info-content .sotial-networks {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    .download-cv,
-    .info-content__p,
-    .contact-section__img {
-        display: none;
-    }
-    
-    .form-group {
-        width: 80vw;
-    }
-
-    .portafolio .container {
-        width: 80vw;
-        height: 80vh;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .container_contact img {
-        width: min(70%, 350px);
-        height: auto;
-    }
-
-
-
-    .card {
-        width: 300px;
-        margin: 1em;
-    }
-}
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    @keyframes left-move {
-        0% {
-            opacity: 0;
-            transform: translateX(-100px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
 
 .sobremi {
     background-color: #2c3c69;
@@ -827,4 +690,87 @@ html {
 .arriba {
     color: #ebc20f;
     transform: translateX(-50%);
+}
+
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .sobremi .fila {
+        display: block;
+    }
+
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+
+    .skills .fila {
+        display: block;
+    }
+
+    .skills .fila .col {
+        width: 100%;
+    }
+
+    .skills .fila .col .barra-skill {
+        width: 100%;
+    }
+
+    .curriculum .fila {
+        display: block;
+    }
+
+    .curriculum .fila .col {
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha {
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto img {
+        width: 100%;
+    }
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
 }

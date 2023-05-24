@@ -10,114 +10,209 @@
     </head>
     <body>
         <div class="wrapper">
-            <header>
-                <nav class="navbar">
-                    <div class="brand">
-                        <h2>A<span>F</span>A</h2>
+            
+            <div class="contenedor-header">
+                <header>
+                    <div class="logo">
+                        <a href="#">AFA</a>
                     </div>
-                    <ul class="menu" id="menu">
-                        <li>
-                            <i class="fa-solid fa-house"></i>
-                            <a href="#"  class="active">Inicio</a></li>
-                        <li>
-                            <i class="fa-solid fa-person"></i>
-                            <a href="#">Quien Soy</a></li>
-                        <li>
-                            <i class="fa-solid fa-folder"></i>
-                            <a href="#">Portafolio</a></li>
-                        <li>
-                            <i class="fa-solid fa-phone"></i>
-                            <a href="#">Contacto</a></li>
-                    </ul>
-                    <div class="toggle-menu">
-                        <i class="fas fa-bars" id="toggle_open"></i>
-                        <i class="fas fa-close" id="toggle_close"></i>
+                    <nav id="nav">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-house"></i>
+                                <a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                            <li>
+                                <i class="fa-solid fa-landmark"></i>
+                                <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                            <li>
+                                <i class="fa-solid fa-briefcase"></i>
+                                <a href="#portafolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
-                </nav>
-                
-            </header>
+                </header>
+            </div>
 
-            <main class="main">
-                <div class="info-content">
-                    <h1>¡HOLA! Soy Andrés Arenales</h1>
-                    <p class="info-content_p">Soy un aspirante a desarrollador Web, con manejo intermedio en HTML, CSS, JAVA</p>
+            <section id="inicio" class="inicio">
+                <div class="contenido-banner">
+                    <div class="contenedor-img">
+                        <img src="img/Polish_20210303_125701041.jpg" alt="">
+                    </div>
+                    <h1>Andrés Arenales</h1>
+                    <h2>Aspirante a Desarrollador WEB</h2>
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-facebook"></i>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
                 </div>
-                <img src="img/Polish_20210303_125701041.jpg" alt="">
-            </main>
+            </section>
         </div>
 
-        
-
-        <div class="about">
+        <section id="sobremi" class="sobremi">
             <img src="img/foto editada.jpg" alt="">
             <div class="about-info">
                 <h2>Acerca de mi</h2>
                 <div class="division"></div>
                 <p>Mi nombre es Andrés Felipe Arenales, un aficionado a la programación y al software, me forme en un colegio técnico e incluso alcance una formación complementaria como docente y actualmente me encuentro realizando una tecnología en análisis y desarrollo de software.</p>
                 <p>En el transcurso de mi formación me he capacitado en diferentes lenguajes de programación entre los que destacan SQL, JAVA, HTML y CSS. Además de ir desarrollando una lógica de programación más consistente e incluso mejorar mi manejo del idioma ingles.</p>
-                <button class="ver-cv">Leer más →</button>
-            </div>
-        </div>
-
-        <div class="portafolio">
-            <div class="portafolio-headings">
-                <h2> Mi Portafolio</h2>
-                <div class="division"></div>
-            </div>
-            <div class="container">
-                <div class="card">
-                    <div class="card__img">
-                    </div>
-                    <div class="card__title">
-                        <h2>Calendario de gatitos</h2>
-                    </div>
-                    <div class="card__proyect-links">
-                        <a href="https://github.com/pipeand/Calendario-gatitos">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa-solid fa-globe"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa-solid fa-code"></i>
-                        </a>
-                    </div>
-                    <div class="button-content">
-                        <button class="info_proyecto">
-                            <a href="#">Detalles proyecto</a>
-                        </button>
-                    </div>
-                    
-                </div>
                 
-            </div>
-        </div>
-
-        <div class="contact-section">
-            <div class="header_contacto">
-                <h2>Contactame</h2>
-            <div class="division"></div>
-            </div>
-            <div class="container_contact">
-                <img src="img/foto sin fondo.png" alt="">
-                <div class="forma_contacto">
-                    <h4> Escribeme... </h4>
-                    <form class="form-group">
-                        <input type="text" 
-                        placeholder="Nombre"
-                        class="input">
-                        <input type="email"
-                        placeholder="Email"
-                        class="input">
-                        <textarea name="mensaje"
-                        placeholder="Escribe tu mensaje aquí..."></textarea>
-                        <button type="submit" class="enviar">Enviar Mensaje</button>
-                    </form>
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor_intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                    <button class="download-cv">Leer más → </button>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Bachillerato</h4>
+                            <span class="casa">Instituto Técnico Industrial "Emeterio Duarte Suarez"</span>
+                            <span class="fecha">2011 - 2015</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Normalista Superior</h4>
+                            <span class="casa">Escuela Normal Superior "Francisco de Paula Santander"</span>
+                            <span class="fecha">2019 - 2021</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Tecnología en Analísis y Desarrollo de Software</h4>
+                            <span class="casa">Servicio Nacional de Aprendizaje - SENA</span>
+                            <span class="fecha">Cursando actualmente</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col derecha">
+                        <h3>Experiencia de trabajo</h3>
+                        <div class="item der">
+                            <h4>Operador de sonido</h4>
+                            <span class="casa">Emisora comunitaria "La Voz de los Andes"</span>
+                            <span class="fecha">3 meses</span>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Profesor basica primaria</h4>
+                            <span class="casa">Practicas Laborales</span>
+                            <span class="fecha">2019 - 2021</span>
+                            <p>Experiencia adquirida durante el proceso de formación como docente Normalista</p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        <section id="portafolio" class="portafolio">
+            <div class="contenido-seccion">
+                <h2>Portafolio</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/Calendario gatos.jfif" alt="">
+                        <div class="overlay">
+                            <h3>Calendario de gatitos</h3>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/investigacion.png" alt="">
+                        <div class="overlay">
+                            <h3>Proyecto de investigación</h3>
+                            <p>investigación</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/portafolio.jfif" alt="">
+                        <div class="overlay">
+                            <h3>Portafolio Web</h3>
+                            <p>HTML y CSS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <div class="col">
+        
+                        <input type="text" placeholder="Tú Nombre">
+                        <input type="text" placeholder="Número telefónico">
+                        <input type="text" placeholder="Dirección de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
             
             <footer class="footer">
+                <a href="#inicio" class="arriba">
+                    <i class="fa-solid fa-angles-up"></i>
+                </a>
                 <div class="contenido_footer">
                     <h2>Andrés Arenales</h2>
                     <h5>Aspirante a desarrollador Web</h5>
@@ -127,6 +222,23 @@
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
+                <div class="col">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Málaga,Santander
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamames: 310 573 1864
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: afarenales@misena.edu.co
+                            </li>
+                        </ul>
+                    </div>
             </footer>
         </div>
         <script src="scripts.js"></script>

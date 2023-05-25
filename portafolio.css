@@ -757,3 +757,10 @@ html {
     }
 
 }
+
+@media screen and (max-width:3000px) {
+    .inicio {
+        width: auto;
+        height: 40vw;
+    }
+}

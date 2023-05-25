@@ -736,6 +736,8 @@ html {
     .sobremi .col {
         display: flex;
         flex-wrap: wrap;
+        width: auto;
+        height: auto;
     }
 
     .sobremi .contenedor_intereses {
@@ -744,12 +746,14 @@ html {
     }
 
     .sobremi .col .contenedor_intereses .interes {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         background: none;
         border-radius: 5px;
-        margin: 0 8% 10% 0;
+        margin: 10px 8% 10% 10px;
         display: flex;
         align-items: center;
+
     }
+
 }

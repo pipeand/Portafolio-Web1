@@ -59,6 +59,21 @@ html {
     color: #dbd7d7;
 }
 
+
+.inicio .contenido-banner img {
+    margin-top: 2em;
+    border:  7px solid rgb(248, 196, 136);
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    width: 10em;
+height: 20em;
+}
+
+
+
 .nav-responsive {
     background-color: #1CB698;
     color:#fff;
@@ -89,23 +104,28 @@ html {
 
 
 .inicio .contenido-banner img {
-    margin-top: 40px;
+    margin-top: 2em;
     border:  7px solid rgb(248, 196, 136);
-    display: block;
-    width: 80%;
+
     margin: auto;
-    z-index: 1;
+
     border-radius: 50%;
+
+    width: 10em;
+height: 20em;
 }
 
 .inicio .contenido-banner h1 {
-    margin-top: 40px;
-    font-size: 42px;
+  margin-left: auto;
+  margin-right: auto;
+ margin-top: 1em;
 }
 
 .inicio .contenido-banner h2 {
     font-size: 15px;
     font-weight: normal;
+margin-left: auto;
+  margin-right: auto;
 }
 
 .inicio .contenido-banner .redes a {
@@ -801,8 +821,16 @@ html {
     }
 
     .inicio .contenido-banner img {
-        width: 300px;
-        height: 200px;
+            margin-top: 2em;
+            border:  7px solid rgb(248, 196, 136);
+        
+            margin: auto;
+        
+            border-radius: 50%;
+        
+            width: 10em;
+        height: 20em;
+        
     }
 
     .inicio .contenido-banner h1 {

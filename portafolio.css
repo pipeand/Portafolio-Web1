@@ -639,7 +639,7 @@ html {
     transform: translateX(-50%);
 }
 
-@media screen and (max-width:980px) {
+@media only screen and (max-width:980px) {
 
     .inicio .contenido-banner {
         display: flexbox;
@@ -678,7 +678,7 @@ html {
     }
 }
 
-@media screen and (max-width:700px) {
+@media only screen and (max-width:600px) {
     
     .sobremi .fila  {
         display: block;
@@ -727,7 +727,7 @@ html {
     }
 }
 
-@media screen and (max-width:700px) {
+@media only screen and (max-width:700px) {
     .sobremi {
         display: flex;
         flex-wrap: wrap;
@@ -756,11 +756,92 @@ html {
 
     }
 
+
 }
 
-@media screen and (max-width:3000px) {
-    .inicio {
-        width: auto;
-        height: 40vw;
+@media only screen and (min-width:900px) {
+
+    .inicio .contenido-banner {
+        padding: 20px;
+        background-color: #2273a1;
+        max-width: 550px;
+        margin: auto;
+        text-align: center;
+        border-radius: 40px;
     }
+
+    .sobremi .about-info {
+        width: 950px;
+        height: 500px;
+    }
+
+    .portafolio {
+        height: 1000px;
+    }
+
+    .portafolio .contenido-seccion .galeria {
+        width: auto;
+        height: 900px;
+    }
+
+    .portafolio .contenido-seccion .galeria .proyecto {
+        width: 400px;
+        height: 500px;
+        
+    }
+
+    .portafolio .contenido-seccion .galeria .proyecto img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .portafolio .contenido-seccion .galeria .proyecto .overlay {
+        width: 500px;
+        height: 500px;
+    }
+
+    .inicio .contenido-banner img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .inicio .contenido-banner h1 {
+        width: 200px;
+        height: 100px;
+        font-size: 30px;
+    }
+
+    .inicio .contenido-banner h2 {
+        width: 200px;
+        height: 100px;
+        font-size: 30px;
+    }
+
+    .inicio .contenido-banner .redes {
+        width: 300px;
+        height: 100px;
+        margin: 10px 5px;
+    }
+
+    .sobremi .about-info h2 {
+        width: 900px;
+        height: 200px;
+        font-size: 60px;
+        padding: 10px 40px 0 ;
+    }
+
+    .sobremi .about-info p {
+        width: 900px;
+        height: 200px;
+        font-size: 35px;
+        line-height: 30px;
+        margin-bottom: 100px;
+        margin-top: 0px;
+    }
+
+    .sobremi .about-info {
+        max-width: 400px;
+        margin: 40px 30px;
+    }
+
 }

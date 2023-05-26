@@ -811,13 +811,13 @@ margin-left: auto;
     }
 
     .portafolio .contenido-seccion .galeria .proyecto img {
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
     }
 
     .portafolio .contenido-seccion .galeria .proyecto .overlay {
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
     }
 
     .inicio .contenido-banner img {
@@ -872,4 +872,22 @@ margin-left: auto;
         margin: 40px 30px;
     }
 
+}
+
+@media only screen and (min-width:1000px) {
+
+    .inicio .contenido-banner {
+        padding: 20px;
+        background-color: #2273a1;
+        max-width: 550px;
+        margin: auto;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    .inicio {
+        height: auto;
+        margin-top: 5em;
+        margin-bottom: 1em;
+    }
 }
